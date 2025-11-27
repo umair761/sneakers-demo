@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SneakerHub — Products</title>
+  <title>SneakerForge — Products</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <h1 class="logo"><a href="index.html">SneakerHub</a></h1>
+      <h1 class="logo"><a href="index.html">SneakerForge</a></h1>
+
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
@@ -17,67 +18,41 @@
         <a href="contact.html">Contact</a>
         <a href="cart.html" class="cart-link">Cart (<span id="cart-count-2">0</span>)</a>
       </nav>
+
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
     </div>
   </header>
 
   <main class="container">
-    <h2 class="page-title">All Sneakers</h2>
+    <div class="products-toolbar">
+      <h2>All Sneakers</h2>
+
+      <div class="controls">
+        <input id="search" placeholder="Search sneakers..." />
+        <select id="filter-brand">
+          <option value="all">All Brands</option>
+          <option value="Nike">Nike</option>
+          <option value="Adidas">Adidas</option>
+          <option value="Puma">Puma</option>
+          <option value="Reebok">Reebok</option>
+        </select>
+
+        <select id="sort-price">
+          <option value="default">Sort</option>
+          <option value="low">Price: Low → High</option>
+          <option value="high">Price: High → Low</option>
+        </select>
+      </div>
+    </div>
 
     <div class="grid" id="products-grid">
-      <!-- Each product card includes data attributes used by JS -->
-      <article class="card" id="p1" data-id="1" data-name="Air Runner" data-price="120">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80" alt="Air Runner">
-        <h4>Air Runner</h4>
-        <p class="desc">Lightweight running sneaker with breathable mesh.</p>
-        <p class="price">$120</p>
-        <button class="btn add-to-cart">Add to Cart</button>
-      </article>
-
-      <article class="card" id="p2" data-id="2" data-name="Street Jordan" data-price="150">
-        <img src="https://images.unsplash.com/photo-1528701800489-476f6b38b1f8?w=800&q=80" alt="Street Jordan">
-        <h4>Street Jordan</h4>
-        <p class="desc">High-top with iconic street style.</p>
-        <p class="price">$150</p>
-        <button class="btn add-to-cart">Add to Cart</button>
-      </article>
-
-      <article class="card" id="p3" data-id="3" data-name="Ultra Boost" data-price="140">
-        <img src="https://images.unsplash.com/photo-1600180758896-8d9b0f23e5d5?w=800&q=80" alt="Ultra Boost">
-        <h4>Ultra Boost</h4>
-        <p class="desc">Cushioned sneaker for daily comfort.</p>
-        <p class="price">$140</p>
-        <button class="btn add-to-cart">Add to Cart</button>
-      </article>
-
-      <article class="card" id="p4" data-id="4" data-name="TrailBlaze" data-price="130">
-        <img src="https://images.unsplash.com/photo-1595950657440-0f7d0b09d4f9?w=800&q=80" alt="TrailBlaze">
-        <h4>TrailBlaze</h4>
-        <p class="desc">Rugged sole for outdoor trails.</p>
-        <p class="price">$130</p>
-        <button class="btn add-to-cart">Add to Cart</button>
-      </article>
-
-      <article class="card" id="p5" data-id="5" data-name="Court Classic" data-price="110">
-        <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?w=800&q=80" alt="Court Classic">
-        <h4>Court Classic</h4>
-        <p class="desc">Vintage court sneaker for everyday wear.</p>
-        <p class="price">$110</p>
-        <button class="btn add-to-cart">Add to Cart</button>
-      </article>
-
-      <article class="card" id="p6" data-id="6" data-name="Neo Slip-On" data-price="95">
-        <img src="https://images.unsplash.com/photo-1542300050-2f6e2f31f1fa?w=800&q=80" alt="Neo Slip-On">
-        <h4>Neo Slip-On</h4>
-        <p class="desc">Easy slip-on shoe with minimalist look.</p>
-        <p class="price">$95</p>
-        <button class="btn add-to-cart">Add to Cart</button>
-      </article>
+      <!-- JS will render product cards here -->
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 SneakerHub</p>
+      <p>&copy; 2025 SneakerForge</p>
     </div>
   </footer>
 

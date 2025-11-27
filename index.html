@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SneakerHub — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">SneakerHub</a></h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Step into comfort. Step into style.</h2>
+        <p>Explore our curated sneaker collection — limited drops every month.</p>
+        <a class="btn" href="products.html">Shop Sneakers</a>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h3>Featured Picks</h3>
+      <div class="grid featured-grid" id="featured-products">
+        <!-- Small static featured cards -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80" alt="Air Runner">
+          <h4>Air Runner</h4>
+          <p class="price">$120</p>
+          <a class="btn small" href="products.html#p1">View</a>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1528701800489-476f6b38b1f8?w=800&q=80" alt="Street Jordan">
+          <h4>Street Jordan</h4>
+          <p class="price">$150</p>
+          <a class="btn small" href="products.html#p2">View</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 SneakerHub — Demo site</p>
+      <small>No real orders will be processed.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

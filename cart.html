@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SneakerHub — My Cart</title>
+  <title>SneakerForge — Cart</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <h1 class="logo"><a href="index.html">SneakerHub</a></h1>
+      <h1 class="logo"><a href="index.html">SneakerForge</a></h1>
+
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
@@ -21,10 +22,9 @@
   </header>
 
   <main class="container">
-    <h2 class="page-title">My Cart</h2>
+    <h2 class="page-title">Shopping Cart</h2>
 
     <div id="cart-container">
-      <!-- JS will build cart rows here -->
       <p id="empty-cart">Your cart is empty. <a href="products.html">Shop now</a></p>
     </div>
 
@@ -32,14 +32,16 @@
       <p>Subtotal: <strong id="cart-subtotal">$0.00</strong></p>
       <p>Shipping: <strong id="cart-shipping">$0.00</strong></p>
       <p><strong>Total: <span id="cart-total">$0.00</span></strong></p>
-      <a id="checkout-btn" class="btn" href="checkout.html">Proceed to Buy</a>
-      <button id="clear-cart" class="btn alt">Clear Cart</button>
+      <div class="cart-actions">
+        <a id="checkout-btn" class="btn" href="checkout.html">Proceed to Buy</a>
+        <button id="clear-cart" class="btn alt">Clear Cart</button>
+      </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 SneakerHub</p>
+      <p>&copy; 2025 SneakerForge</p>
     </div>
   </footer>
 

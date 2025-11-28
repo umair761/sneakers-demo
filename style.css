@@ -87,43 +87,48 @@ body{
 /* cart summary */
 .cart-summary{margin-top:18px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;}
 
-/* contact form */
+/* Contact Page */
 .contact-form {
-  max-width: 460px;
+  max-width: 450px;
   margin: 0 auto;
   background: #111;
-  padding: 28px;
+  padding: 26px;
   border-radius: 12px;
   box-shadow: var(--shadow);
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
   color: var(--text);
   font-size: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  display: block;
   width: 100%;
-  margin-top: 6px;
+  margin-bottom: 18px;
   padding: 12px;
-  background: #0a0a0a;
-  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #0a0a0a;
   color: #fff;
 }
 
-.contact-form textarea {
-  min-height: 120px;
-  resize: vertical;
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.contact-form .btn {
-  width: 100%;
-  margin-top: 12px;
+.contact-form button:hover {
+  background: var(--accent-2);
 }
 
 

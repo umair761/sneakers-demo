@@ -88,9 +88,70 @@ body{
 .cart-summary{margin-top:18px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;}
 
 /* forms */
-label{display:block;margin-bottom:12px;color:var(--muted)}
-input[type="text"],input[type="email"],select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
-.checkout-form{max-width:540px}
+/* ====================== */
+/* Contact Form Upgraded */
+/* ====================== */
+.contact-area {
+    background: var(--panel);
+    padding: 40px;
+    border-radius: var(--radius);
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 10px 30px rgba(214,40,40,0.2);
+}
+
+.contact-area h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.contact-area label {
+    font-weight: 600;
+    color: var(--text);
+    margin: 12px 0 6px;
+}
+
+.contact-area input,
+.contact-area textarea {
+    width: 100%;
+    background: #fff; /* White background */
+    border: 2px solid transparent;
+    color: #000;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 12px;
+    transition: .3s;
+}
+
+.contact-area input:focus,
+.contact-area textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 8px rgba(214,40,40,0.5);
+}
+
+.contact-area button {
+    width: 100%;
+    background: var(--accent);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease-in-out;
+}
+
+.contact-area button:hover {
+    background: var(--accent-2);
+    transform: translateY(-3px);
+}
+
 
 /* small util */
 .page-title{margin:20px 0}

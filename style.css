@@ -87,69 +87,43 @@ body{
 /* cart summary */
 .cart-summary{margin-top:18px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;}
 
-/* forms */
-/* ====================== */
-/* Contact Form Upgraded */
-/* ====================== */
-.contact-area {
-    background: var(--panel);
-    padding: 40px;
-    border-radius: var(--radius);
-    max-width: 700px;
-    margin: 40px auto;
-    box-shadow: 0 10px 30px rgba(214,40,40,0.2);
+/* contact form */
+.contact-form {
+  max-width: 460px;
+  margin: 0 auto;
+  background: #111;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
 }
 
-.contact-area h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--text);
+.contact-form label {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--text);
+  font-size: 15px;
 }
 
-.contact-area label {
-    font-weight: 600;
-    color: var(--text);
-    margin: 12px 0 6px;
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  background: #0a0a0a;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  color: #fff;
 }
 
-.contact-area input,
-.contact-area textarea {
-    width: 100%;
-    background: #fff; /* White background */
-    border: 2px solid transparent;
-    color: #000;
-    padding: 14px;
-    font-size: 15px;
-    border-radius: 10px;
-    outline: none;
-    margin-bottom: 12px;
-    transition: .3s;
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
-.contact-area input:focus,
-.contact-area textarea:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 8px rgba(214,40,40,0.5);
-}
-
-.contact-area button {
-    width: 100%;
-    background: var(--accent);
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 14px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: .3s ease-in-out;
-}
-
-.contact-area button:hover {
-    background: var(--accent-2);
-    transform: translateY(-3px);
+.contact-form .btn {
+  width: 100%;
+  margin-top: 12px;
 }
 
 

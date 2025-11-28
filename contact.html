@@ -40,29 +40,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </header>
 
-  <main class="container">
-    <h2 class="page-title">Contact Us</h2>
+ <main class="contact-page">
+    <h2>Contact Us</h2>
 
-   <div class="container">
-    <div class="contact-area">
-        <h2>Contact Us</h2>
+    <form action="thankyou.html" method="get" class="contact-form">
+        
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
 
-        <form action="thankyou.html">
-            <label>Your Name</label>
-            <input type="text" required placeholder="Enter your name">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label>Your Email</label>
-            <input type="email" required placeholder="Enter your email">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-            <label>Your Message</label>
-            <textarea rows="6" required placeholder="Write your message here..."></textarea>
+        <button type="submit">Submit</button>
 
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</div>
+    </form>
+</main>
 
-  </main>
 
   <footer class="site-footer">
     <div class="container">

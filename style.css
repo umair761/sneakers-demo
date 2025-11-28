@@ -160,3 +160,42 @@ body{
   .card img{height:140px}
   .hero-text h2{font-size:28px}
 }
+/* Thank You Page Styling */
+.thanks {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 60px 40px;
+    margin: 120px auto;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+.thanks h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #e94560;
+}
+
+.thanks p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #e94560;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #bf2e48;
+}
+
